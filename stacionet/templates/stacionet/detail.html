@@ -1,0 +1,9 @@
+<p>linjat e stacionit {{ stacioni }}</p>
+
+<ul>
+    {% for linja in linjat_list %}
+        {% if linja.stacion.stacion_id == stacioni %}
+            <li>{{ linja.linja_name }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
