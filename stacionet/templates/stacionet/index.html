@@ -1,7 +1,13 @@
-<p>vendosni id e nje stacioni psh 001</p>
+{% extends 'base.html' %}
 
-<form action="" method="POST">
-    {% csrf_token %}
-    {{ form }}
-    <input type="submit" value="Submit">
-</form>
+{% block title %}Index{% endblock %}
+
+{% block content %}
+    <p>vendosni id e nje stacioni psh 001</p>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
